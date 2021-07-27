@@ -95,6 +95,9 @@ const CountDownTimer = forwardRef((props, ref) => {
       setTimeStamp(props.timestamp);
       setSendOnce(true);
     },
+    getTimeLeft:()=>{
+      return timeStamp;
+    }
   }));
 
   return (
